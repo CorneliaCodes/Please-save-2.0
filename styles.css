@@ -24,7 +24,8 @@ body {
     color: white;
   }
 
-  .logo h1 {
+  .logo a {
+    text-decoration: none;
     margin: 0;
     color: white;
   }
@@ -89,6 +90,27 @@ body {
     color: white;
   }
   
+  .slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Slides */
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slides img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+
   /* Margin Sections */
   .margin-section {
     margin: 40px auto;
@@ -106,6 +128,18 @@ body {
     margin-bottom: 10px;
   }
   
+  .sticky-bookmark {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px; 
+    background-color: #898fc4; 
+    color: white;
+    padding: 10px 15px; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
   /* Footer */
   .footer {
     background-color: #abb1ea;
